@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CSq-if-QaH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tsQ-Si-FdR">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CSq-if-QaH" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgR-t6-LqA">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="lightOff.png" id="jJq-P8-FOD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PKR-eu-dEM">
+                                <rect key="frame" x="140" y="289" width="41" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="off.png">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDown:" destination="CSq-if-QaH" eventType="touchUpInside" id="Ilo-Kb-7AW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="myBg" destination="jJq-P8-FOD" id="w5j-kT-fXF"/>
+                        <outlet property="myBtn" destination="PKR-eu-dEM" id="XNA-d8-pM1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prg-hd-EQ5" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Seting View Controller-->
+        <scene sceneID="vC6-nF-5vl">
+            <objects>
+                <viewController restorationIdentifier="SetingViewController" storyboardIdentifier="SetingViewController" id="hCn-VV-lod" customClass="SetingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xmn-6h-YfC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="setBg.png" id="7EC-zl-Kes">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="setList.png" id="djp-B1-CGn">
+                                <rect key="frame" x="16" y="60" width="284" height="147"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="setTitle.png" id="7YI-IS-sVV">
+                                <rect key="frame" x="8" y="0.0" width="304" height="46"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lR9-QX-9Dx">
+                                <rect key="frame" x="8" y="1" width="44" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="back.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btPressed:" destination="hCn-VV-lod" eventType="touchUpInside" id="S6j-Uv-hAX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bPS-XR-G0f">
+                                <rect key="frame" x="16" y="60" width="45" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="radioUp.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btPressed:" destination="hCn-VV-lod" eventType="touchUpInside" id="f1a-JN-f2m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GF7-yo-P0I">
+                                <rect key="frame" x="16" y="109" width="45" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="radioDown.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btPressed:" destination="hCn-VV-lod" eventType="touchUpInside" id="Xe1-Fp-LHM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ojq-xC-opV">
+                                <rect key="frame" x="16" y="158" width="45" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="radioUp.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btPressed:" destination="hCn-VV-lod" eventType="touchUpInside" id="yNk-Cz-LDm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aEy-Oq-K4z"/>
+                    <connections>
+                        <outlet property="myBackBt" destination="lR9-QX-9Dx" id="yaJ-IS-qCz"/>
+                        <outlet property="myBg" destination="7EC-zl-Kes" id="hYV-go-TMy"/>
+                        <outlet property="myList" destination="djp-B1-CGn" id="DzI-MH-J2I"/>
+                        <outlet property="myRadioBt1" destination="bPS-XR-G0f" id="EIO-26-Rnh"/>
+                        <outlet property="myRadioBt2" destination="GF7-yo-P0I" id="f3c-FH-b5W"/>
+                        <outlet property="myRadioBt3" destination="ojq-xC-opV" id="egH-zT-OQJ"/>
+                        <outlet property="myTitle" destination="7YI-IS-sVV" id="Wbe-06-mGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4g-xu-pE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back.png" width="88" height="87"/>
+        <image name="lightOff.png" width="640" height="960"/>
+        <image name="off.png" width="61" height="129"/>
+        <image name="radioDown.png" width="91" height="91"/>
+        <image name="radioUp.png" width="91" height="91"/>
+        <image name="setBg.png" width="640" height="960"/>
+        <image name="setList.png" width="588" height="295"/>
+        <image name="setTitle.png" width="640" height="87"/>
+    </resources>
+    <classes>
+        <class className="SetingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SetingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btPressed:"/>
+                <relationship kind="outlet" name="myBackBt" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="myBg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="myList" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="myRadioBt1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="myRadioBt2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="myRadioBt3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="myTitle" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnDown:"/>
+                <relationship kind="outlet" name="myBg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="myBtn" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
